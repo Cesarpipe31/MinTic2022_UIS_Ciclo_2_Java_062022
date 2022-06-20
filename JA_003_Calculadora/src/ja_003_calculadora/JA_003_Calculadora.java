@@ -51,8 +51,17 @@ public class JA_003_Calculadora
     public static float dividir (float numero1, float numero2)
     {
         float respuesta;
-        respuesta = numero1 / numero2;
-        System.out.println ("La división de " + numero1 + " DIVIDIDO " + numero2 + " es igual a " + respuesta);
+        
+        if(numero2 != 0)
+        {
+            respuesta = numero1 / numero2;
+            System.out.println ("La división de " + numero1 + " DIVIDIDO " + numero2 + " es igual a " + respuesta);            
+        }
+        else
+        {
+            respuesta = 0;
+            System.out.println("La división por cero no existe!");
+        }
         return respuesta;
-    }
+}       
 }
