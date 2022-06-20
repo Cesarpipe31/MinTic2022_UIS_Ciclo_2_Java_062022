@@ -62,7 +62,8 @@ public class JA_002_Estructuras
 }
 
 */
-        
+
+/*        
 //  Bucle while
         
     int numero;
@@ -72,7 +73,38 @@ public class JA_002_Estructuras
         System.out.println("Imprimiento con while numero " + numero);
         numero = numero + 2;
     }
-    
-    }
+*/
 
+/*        
+//  Bucle do while
+    
+        int numero;
+        numero = 1;
+        do
+        {
+            System.out.println("Imprimiento con do while numero " + numero);
+            numero = numero + 7;
+        }
+        while (numero <= 30);
+*/
+        
+//  Bucle Estructura Condicional de Selección
+        
+        Scanner leer = new Scanner(System.in);
+        int numero;
+        System.out.print("Escriba un número: ");
+        numero = leer.nextInt();
+        
+        switch (numero)
+        {
+            case 1: System.out.println("Seleccionó la opción 1");
+                    break;
+            case 2: System.out.println("Seleccionó la opción 2");
+                    break;
+            case 3: System.out.println("Seleccionó la opción 3");
+                    break;
+            default: System.out.println("No seleccionó una opción válida");
+                    break;                    
+        }
+    }
 }
