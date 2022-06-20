@@ -19,6 +19,8 @@ public class JA_003_Calculadora
         
         sumar(numero1, numero2);
         restar(numero1, numero2);
+        multiplicar(numero1, numero2);
+        dividir(numero1, numero2);
                 
     }
     
@@ -35,6 +37,22 @@ public class JA_003_Calculadora
         float respuesta;
         respuesta = numero1 - numero2;
         System.out.println("La resta de " + numero1 + " MENOS " + numero2 + " es igual a " + respuesta);
+        return respuesta;
+    }
+    
+    public static float multiplicar(float numero1, float numero2)
+    {
+        float respuesta;
+        respuesta = numero1 * numero2;
+        System.out.println("La multiplicación de " + numero1 + "  P O R  " + numero2 + " es igual a " + respuesta);
+        return respuesta;
+    }
+    
+    public static float dividir (float numero1, float numero2)
+    {
+        float respuesta;
+        respuesta = numero1 / numero2;
+        System.out.println ("La división de " + numero1 + " DIVIDIDO " + numero2 + " es igual a " + respuesta);
         return respuesta;
     }
 }
