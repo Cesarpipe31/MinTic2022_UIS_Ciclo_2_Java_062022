@@ -5,6 +5,9 @@
 package ja_002_estructuras;
 
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 
 /**
  *
@@ -87,7 +90,8 @@ public class JA_002_Estructuras
         }
         while (numero <= 30);
 */
-        
+
+/*        
 //  Bucle Estructura Condicional de Selección
         
         Scanner leer = new Scanner(System.in);
@@ -106,5 +110,8 @@ public class JA_002_Estructuras
             default: System.out.println("No seleccionó una opción válida");
                     break;                    
         }
+*/
+        
+
     }
 }
