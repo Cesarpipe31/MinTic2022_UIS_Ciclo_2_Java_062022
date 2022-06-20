@@ -1,0 +1,207 @@
+Estructuras de Control en Lenguaje Java
+
+1.  Estructura básica de Proyectos en Java
+
+100% orientado a objetos.
+Un paquete, una clase y un método.
+Carpeta Source Packages tiene archivos extensión .java
+Dentro del código se meciona el paquete y luego la clase.
+Dentro de la clase  un método MAIN.
+
+CLASE PRINCIPAL Y METODO MAIN
+
+Múltiples clases, pero debe declararse clase principal; tiene MAIN() que es programa, rutina o método principal.
+MAIN es punto de partida de la aplicación.
+
+
+	public class ClasePrincipal {
+		public static void manin (String[] args) {
+		sentencia_1;
+		sentencia_2;
+		//...
+		sentencia_N;
+		}
+	}
+
+
+2.  DATOS PRIMITIVOS Y NO PRIMITIVOS
+
+Lenguaje de programación de tipado estático.
+Establece valor a almacenas, no son clases, ni tienen métodos.
+
+PRIMITIVOS
+
+byte
+short
+int
+long
+float
+double
+boolean
+char
+string
+
+
+NO PRIMITIVOS
+
+Wrapper u Objetos envoltorios
+
+primitivo inicial minúscula
+No primitivo inicial mayúscula
+
+
+3.  ASIGNACION DE VARIABLES
+
+Espacio de almacenamiento
+
+	public static void main (String[] args) {
+		int numero = 10;
+		String nombre = "pedro;
+	}
+
+Java diferencia entre mayúsuculas y minúsculas
+No debe empezar por un número
+No debe empezar por carácter especial
+Empezar por letra
+Empezar por _ subrayado
+Empezar por el $ signo de dólar
+Nombres pequeños o de fácil entendimiento.
+Utilizar minúsculas
+Recomiendo no utilizar la Ñ ó  Ü
+Recomienda no utilizar tíldes.
+
+
+Para Constantes:
+	final Tipo IDENTIFICADOR = valor;
+		// En el ámbito de una clase, o es miembro de la clase.
+
+Para constantes estáticas:
+	static final Tipo IDENTIFICADOR = valor;
+		// En el ámbito de una clase, o es miembro de la clase.
+
+
+4.  SALIDA Y ENTRADA DE DATOS.
+
+	System.out.print();
+	System.out.println();   // incluye salto de línea
+
+/*
+La clase hola construye un programa que 
+muestra un mensaje en pantalla
+*/
+
+	public class Hola {
+		public static void main (String[] args) {
+		System.out.println("Hola, ");
+		System.out.print("Esta es una clase de Misión Tic 2022! ");
+		System.out.println("hasta luego");
+		}
+	}
+
+ENTRADA DE DATOS
+Lectura de Línea
+Clase Scanner
+
+	class EntradaTexto{
+		public static void main (String[] args) {
+		String nombre;
+		System.out.print("Por favor, dime tu nombre: ");
+		nombre = System.console().readLine();
+		System.out.println("Hola " + nombre + ", !Bienvenido a Java desde Cero!");
+		}
+	}
+
+
+CLASE SCANNER
+
+	import java.util.Scanner;
+	class ObtenerEntradaUsuario
+	{
+		public static void main(String arg[])
+		{
+		Scanner in = new Scanner(System.in);
+		String s = in.nextLine();
+		System.out.println("Usted ha ingresado la cadena: "+s);
+
+		int a = in.nextInt();
+		System.out.println("Usted ha ingresado un entero: "+a);
+
+		float b = in.nextFloat();
+		System.out.println("Usted ha ingresado un float: "+b);
+		}
+	}
+
+5.  Operadores aritméticos y lógicos.
+
++ 
+- 
+* 
+/ 
+% 
+++ 
+--
+==
+!=
+<
+<=
+>
+>=
+
+
+6.  Estructuras de Selección
+If
+If else
+If else if
+Anidación de condiciones
+Operador Ternario
+Swithc Case
+
+6.1 If
+
+	package Paquete;
+
+	public class claseMain {
+		public static void main(String[] args){
+			int edad = 15;
+			if (edad >= 18) {
+				System.out.println("Usted es mayor de edad");
+			}
+	System.out.println("Usted es menor de edad");
+		}
+	}
+
+!
+|
+^
+&
+||
+&&
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
