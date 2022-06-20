@@ -8,7 +8,18 @@ public class JA_003_Calculadora
     {
         int numero;
         Scanner leernumero = new Scanner(System.in);
-        sumar(4,5);
+        float numero1;
+        float numero2;
+
+        System.out.print("Escriba el numero 1: ");
+        numero1 = leernumero.nextFloat();
+        
+        System.out.print("Escriba el numero 2: ");
+        numero2 = leernumero.nextFloat();
+        
+        sumar(numero1, numero2);
+        restar(numero1, numero2);
+                
     }
     
     public static float sumar(float numero1, float numero2) 
@@ -18,4 +29,12 @@ public class JA_003_Calculadora
         System.out.println("La suma de " + numero1 + " y " + numero2 + " es igual a " + respuesta);
         return respuesta;
     }   
+    
+    public static float restar(float numero1, float numero2)
+    {
+        float respuesta;
+        respuesta = numero1 - numero2;
+        System.out.println("La resta de " + numero1 + " y " + numero2 + " es igual a " + respuesta);
+        return respuesta;
+    }
 }
