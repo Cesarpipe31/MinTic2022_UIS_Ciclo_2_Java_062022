@@ -17,10 +17,32 @@ public class JA_003_Calculadora
         System.out.print("Escriba el numero 2: ");
         numero2 = leernumero.nextFloat();
         
+        /*
         sumar(numero1, numero2);
         restar(numero1, numero2);
         multiplicar(numero1, numero2);
         dividir(numero1, numero2);
+        */
+        
+        System.out.println("1. Sumar");
+        System.out.println("2. Restar");
+        System.out.println("3. Multiplicar");
+        System.out.println("4. Dividir");
+        numero = leernumero.nextInt();
+        switch(numero)
+                {
+                    case 1: sumar(numero1, numero2);
+                            break;
+                    case 2: restar(numero1, numero2);
+                            break;
+                    case 3: multiplicar(numero1, numero2);
+                            break;
+                    case 4: dividir(numero1, numero2);
+                            break;
+                    default: System.out.println("no seleccionó una opción válidad");
+                            break;
+                }
+        
                 
     }
     
