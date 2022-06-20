@@ -26,7 +26,7 @@ public class JA_003_Calculadora
     {
         float respuesta;
         respuesta = numero1 + numero2;
-        System.out.println("La suma de " + numero1 + " y " + numero2 + " es igual a " + respuesta);
+        System.out.println("La suma de " + numero1 + " MÁS " + numero2 + " es igual a " + respuesta);
         return respuesta;
     }   
     
@@ -34,7 +34,7 @@ public class JA_003_Calculadora
     {
         float respuesta;
         respuesta = numero1 - numero2;
-        System.out.println("La resta de " + numero1 + " y " + numero2 + " es igual a " + respuesta);
+        System.out.println("La resta de " + numero1 + " MENOS " + numero2 + " es igual a " + respuesta);
         return respuesta;
     }
 }
