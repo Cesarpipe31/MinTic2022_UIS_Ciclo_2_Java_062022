@@ -34,8 +34,11 @@ public class JA_004_Vida
         
         persona1.caminar(5, "Norte");
         persona1.comer("Hamburguesas", 2);
+        Humano.respirar(true);
         
         persona2.caminar(7, "Oriente");
         persona2.comer("Sancocho", 12);
+        Humano.respirar(false);
+        
     }
 }
