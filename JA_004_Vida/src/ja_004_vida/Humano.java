@@ -33,5 +33,10 @@ public class Humano
             System.out.println("Fallecio");
         }            
     }     
+    
+    public void estudiar(String pregrado, int nota)
+    {
+        System.out.println( nombre + " estudio " + pregrado + " y tuvo una nota promedio de " + nota );
+    }
 }
 
