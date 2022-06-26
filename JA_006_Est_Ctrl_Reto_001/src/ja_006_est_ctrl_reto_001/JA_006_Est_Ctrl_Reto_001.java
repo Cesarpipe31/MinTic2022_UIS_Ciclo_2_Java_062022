@@ -41,12 +41,26 @@ dar solución a la situación planteada
 
 package ja_006_est_ctrl_reto_001;
 
+import java.util.Scanner;
+
 public class JA_006_Est_Ctrl_Reto_001 
 {
     public static void main(String[] args)
     {
-        calcularCostoAlmacenamiento(true,1000f);
-        calcularCostoAlmacenamiento(false,1000f);
+        //calcularCostoAlmacenamiento(true,1000f);
+        //calcularCostoAlmacenamiento(false,1000f);
+        
+        boolean refrigerado;
+        float valorBase;
+        Scanner leer = new Scanner(System.in);
+                   
+        System.out.print("Escriba el valor base del producto: ");
+        valorBase = leer.nextFloat();
+        
+        System.out.print("Está refrigerado? (true or false): ");
+        refrigerado = leer.nextBoolean();
+        
+        calcularCostoAlmacenamiento(refrigerado, valorBase);
     }
         
     public static float calcularCostoAlmacenamiento(boolean refrigerado, float valorBase)
