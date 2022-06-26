@@ -15,7 +15,8 @@ package ja_005_est_ctrl_cuest_rev_apren;
 
 import java.util.Scanner;
 
-public class JA_005_Est_Ctrl_Cuest_Rev_Apren {
+public class JA_005_Est_Ctrl_Cuest_Rev_Apren 
+{
 
     public static void main(String[] args) 
     {
