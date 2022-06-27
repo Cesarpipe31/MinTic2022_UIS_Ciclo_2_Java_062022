@@ -11,9 +11,12 @@ public class JA_004_Vida
         
         Humano persona1 = new Humano();
         Humano persona2 = new Humano();
+        
+        persona1.asignarNombre("Juan Carlos");
+        System.out.println(persona1.verNombre());
                 
         // Atributos Persona 1
-        persona1.nombre = "Juan";
+        //persona1.nombre = "Juan";
         persona1.apellido = "Pérez";
         persona1.cedula = 105555555;
         persona1.edad = 29;

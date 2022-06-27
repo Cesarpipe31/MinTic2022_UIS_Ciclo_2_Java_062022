@@ -38,5 +38,24 @@ public class Humano
     {
         System.out.println( nombre + " estudio " + pregrado + " y tuvo una nota promedio de " + nota );
     }
+    
+    public void asignarNombre(String nombre)
+    {
+        this.nombre = nombre;        
+    }
+    
+    public String verNombre()
+    {
+        return nombre;
+    }
+    
+    
+    public static void limpiarPantalla()
+    {
+        for (int i= 0; i < 5; i++)
+        {
+            System.out.println();
+        }
+    }
 }
 

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Humano
+comment1.params=nombre
+comment1.target=void\ asignarNombre(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ verNombre()
+comment3.params=apellido
+comment3.target=void\ asignarApellido(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ verApellido()
+numComments=5
