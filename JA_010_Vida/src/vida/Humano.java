@@ -1,4 +1,4 @@
-package vida;
+package ja_010_vida;
 
 public class Humano
 {
