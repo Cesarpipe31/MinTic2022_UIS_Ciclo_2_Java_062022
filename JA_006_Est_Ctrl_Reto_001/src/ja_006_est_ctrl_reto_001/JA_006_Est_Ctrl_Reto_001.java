@@ -52,6 +52,7 @@ public class JA_006_Est_Ctrl_Reto_001
         
         boolean refrigerado;
         float valorBase;
+        /*
         Scanner leer = new Scanner(System.in);
                    
         System.out.print("Escriba el valor base del producto: ");
@@ -61,6 +62,8 @@ public class JA_006_Est_Ctrl_Reto_001
         refrigerado = leer.nextBoolean();
         
         calcularCostoAlmacenamiento(refrigerado, valorBase);
+        */
+        calcularCostoAlmacenamiento(false,100);
     }
         
     public static float calcularCostoAlmacenamiento(boolean refrigerado, float valorBase)
