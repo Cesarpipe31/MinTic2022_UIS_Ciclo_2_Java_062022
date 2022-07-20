@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Cliente
+comment1.params=obj
+comment1.target=int\ compareTo(java.lang.Object)
+comment2.params=numCliente\ nombre\ email
+comment2.target=Cliente(java.lang.Integer,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.Integer\ getNumCliente()
+comment4.params=
+comment4.target=java.lang.String\ getNombre()
+comment5.params=
+comment5.target=java.lang.String\ getEmail()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
