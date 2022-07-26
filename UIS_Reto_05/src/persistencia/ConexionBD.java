@@ -10,7 +10,7 @@ public class ConexionBD
     private Connection miconexion = null;
     private Statement mitransaccion = null;
     private ResultSet miconsulta = null;
-    final String NombreBD = "facturacion.db"; //CAMBIE AQUI EL NOMBRE DE LA BASE DE DATOS, DEBE ESTAR EN LA CARPETA RAIZ
+    final String NombreBD = "reto5.db"; //CAMBIE AQUI EL NOMBRE DE LA BASE DE DATOS, DEBE ESTAR EN LA CARPETA RAIZ
     //ESTABLECER LOS PARAMETROS DE CONEXION A LA BASE DE DATOS
     public ConexionBD()
     {
@@ -29,7 +29,7 @@ public class ConexionBD
             System.out.println(ex.getMessage());
         }
     }
-    //ABIR LA CONEXION
+    //ABRIR LA CONEXION
     public Connection getConnection()
     {
         return(miconexion);
@@ -143,7 +143,8 @@ public class ConexionBD
         {
             miconexion.commit();
             return true;
-        } catch(SQLException sqlex)
+        }
+        catch(SQLException sqlex)
         {
             System.out.println("Error al hacer commit " + sqlex.getMessage());
             return false;

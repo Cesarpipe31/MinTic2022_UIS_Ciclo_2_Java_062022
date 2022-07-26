@@ -1,4 +1,4 @@
-package ja_026_facturación;
+1package ja_026_facturación;
 
 import java.sql.*;
 import java.util.Scanner;

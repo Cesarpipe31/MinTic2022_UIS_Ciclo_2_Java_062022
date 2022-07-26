@@ -1,4 +1,5 @@
 package persistencia;
+/*PROFE*/
 
 import java.sql.*;
 import java.util.logging.*;
@@ -29,7 +30,7 @@ public class ConexionBD
             System.out.println(ex.getMessage());
         }
     }
-    //ABIR LA CONEXION
+    //ABRIR LA CONEXION
     public Connection getConnection()
     {
         return(miconexion);
@@ -143,7 +144,8 @@ public class ConexionBD
         {
             miconexion.commit();
             return true;
-        } catch(SQLException sqlex)
+        }
+        catch(SQLException sqlex)
         {
             System.out.println("Error al hacer commit " + sqlex.getMessage());
             return false;

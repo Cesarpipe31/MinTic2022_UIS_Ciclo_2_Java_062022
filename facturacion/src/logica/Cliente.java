@@ -60,8 +60,8 @@ public class Cliente
     public String toString()
     {
         return this.getClass().getName() + "{" + "codtipoid=" + this.codtipoid + ", id=" + this.id + ", nombres=" + this.nombres + ", apellidos=" + this.apellidos + '}';
-    }  
-
+    }
+    //METODO PARA CONSULTAR CLIENTES
     public List<Cliente> listarCliente()
     {
         //Creo la lista que contiene los objetos cliente
@@ -86,7 +86,6 @@ public class Cliente
                 micliente.setApellidos(miconsulta.getString("apellidos"));
                 milistaclientes.add(micliente);
             }
-            
         }
         catch(SQLException ex)
         {
@@ -98,7 +97,91 @@ public class Cliente
         }
         return milistaclientes;
     }
-
+    //METODO PARA GRABAR CLIENTES
+    public boolean guardarCliente()
+    {
+        //Me conecto a la base de datos
+        ConexionBD miconexion = new ConexionBD();
+        //Creo el script SQL para la transacción
+        String SQL = "INSERT INTO clientes(codtipoid,id,nombres,apellidos) VALUES('"+this.codtipoid+"',"+this.id+",'"+this.nombres+"','"+this.apellidos+"');";
+        if(miconexion.setAutoCommitBD(false)==true)
+        {
+            if(miconexion.insertarBD(SQL)==true)
+            {
+                miconexion.commitBD(); //Ejecuta el cambio preparado en el script
+                miconexion.cerrarConexion();
+                return(true);
+            }
+            else
+            {
+                miconexion.rollbackBD(); //Deshacer el cambio que se habia preparado
+                miconexion.cerrarConexion();
+                return(false);
+            }
+        }
+        else
+        {
+            miconexion.cerrarConexion();
+            return(false);  
+        }
+    }
+    //METODO PARA ACTUALIZAR CLIENTES
+    public boolean actualizarCliente()
+    {
+        //Me conecto a la base de datos
+        ConexionBD miconexion = new ConexionBD();
+        //Creo el script SQL para la transacción
+        String SQL = "UPDATE clientes SET nombres='"+this.nombres+"', apellidos='"+this.apellidos+"' WHERE codtipoid='"+this.codtipoid+"' AND id="+this.id+";";
+        if(miconexion.setAutoCommitBD(false)==true)
+        {
+            if(miconexion.actualizarBD(SQL)==true)
+            {
+                miconexion.commitBD(); //Ejecuta el cambio preparado en el script
+                miconexion.cerrarConexion();
+                return(true);
+            }
+            else
+            {
+                miconexion.rollbackBD(); //Deshacer el cambio que se habia preparado
+                miconexion.cerrarConexion();
+                return(false);
+            }
+        }
+        else
+        {
+            miconexion.cerrarConexion();
+            return(false);  
+        }
+    }
+    //METODO PARA BORRAR CLIENTES
+    public boolean borrarCliente()
+    {
+        //Me conecto a la base de datos
+        ConexionBD miconexion = new ConexionBD();
+        //Creo el script SQL para la transacción
+        String SQL = "DELETE FROM clientes WHERE codtipoid='"+this.codtipoid+"' AND id="+this.id+";";
+        if(miconexion.setAutoCommitBD(false)==true)
+        {
+            if(miconexion.borrarBD(SQL)==true)
+            {
+                miconexion.commitBD(); //Ejecuta el cambio preparado en el script
+                miconexion.cerrarConexion();
+                return(true);
+            }
+            else
+            {
+                miconexion.rollbackBD(); //Deshacer el cambio que se habia preparado
+                miconexion.cerrarConexion();
+                return(false);
+            }
+        }
+        else
+        {
+            miconexion.cerrarConexion();
+            return(false);  
+        }
+    }  
+    
     
     
 }
