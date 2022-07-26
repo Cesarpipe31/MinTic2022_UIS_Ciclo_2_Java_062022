@@ -1,0 +1,7 @@
+ant -f "C:\\Users\\Estudiante\\Documents\\2022\\clases de 2022\\misiontic22\\PROGRAMAS\\RETO 5\\Reto5.2" clean
+init:
+deps-clean:
+Updating property file: C:\Users\Estudiante\Documents\2022\clases de 2022\misiontic22\PROGRAMAS\RETO 5\Reto5.2\build\built-clean.properties
+Deleting directory C:\Users\Estudiante\Documents\2022\clases de 2022\misiontic22\PROGRAMAS\RETO 5\Reto5.2\build
+clean:
+BUILD SUCCESSFUL (total time: 0 seconds)
