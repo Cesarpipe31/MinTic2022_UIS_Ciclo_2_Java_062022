@@ -170,6 +170,7 @@ public class Producto {
         ConexionBD miconexion = new ConexionBD();
         //Creo el script SQL para la transacción
         String SQL = "DELETE FROM productos WHERE id="+this.id+";";
+              
         if(miconexion.setAutoCommitBD(false)==true)
         {
             if(miconexion.borrarBD(SQL)==true)
