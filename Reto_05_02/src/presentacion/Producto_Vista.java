@@ -379,7 +379,9 @@ public class Producto_Vista extends javax.swing.JFrame {
             }    
         }
     }//GEN-LAST:event_btnEliminarActionPerformed
-
+  
+  
+    
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         jTextFieldId.setText("");
         jTextFieldNombre.setText("");

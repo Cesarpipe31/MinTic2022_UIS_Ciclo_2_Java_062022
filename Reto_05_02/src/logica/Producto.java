@@ -171,7 +171,7 @@ public class Producto {
         //Creo el script SQL para la transacción
         
         
-        String SQL = "DELETE FROM Producto WHERE id="+this.id+";";
+        String SQL = "DELETE FROM Producto  WHERE id="+this.id+";";
         
         
         if(miconexion.setAutoCommitBD(false)==true)
